@@ -1,7 +1,7 @@
 FROM alpine
 
-RUN apk add --no-cache curl wget busybox-extras netcat-openbsd python3 py3-pip bash && \
-    apk add --no-cache aws-cli
+RUN apk add --no-cache curl wget busybox-extras netcat-openbsd python3 py3-pip bash 
+RUN apk add --no-cache aws-cli
 
 RUN apk --purge -v del py3-pip
 
